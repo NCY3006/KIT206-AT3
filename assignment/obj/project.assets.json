@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\point\\Downloads\\assignment\\assignment\\assignment.csproj",
+      "projectUniqueName": "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\assignment.csproj",
       "projectName": "assignment",
-      "projectPath": "C:\\Users\\point\\Downloads\\assignment\\assignment\\assignment.csproj",
+      "projectPath": "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\assignment.csproj",
       "packagesPath": "C:\\Users\\point\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\point\\Downloads\\assignment\\assignment\\obj\\",
+      "outputPath": "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\point\\AppData\\Roaming\\NuGet\\NuGet.Config",
