@@ -1,0 +1,8 @@
+C:\Users\mcyng\Downloads\assignment\assignment\obj\Release\net40\assignment.csprojAssemblyReference.cache
+C:\Users\mcyng\Downloads\assignment\assignment\obj\Release\net40\assignment.csproj.CoreCompileInputs.cache
+C:\Users\mcyng\Downloads\assignment\assignment\obj\Release\net40\assignment.AssemblyInfoInputs.cache
+C:\Users\mcyng\Downloads\assignment\assignment\obj\Release\net40\assignment.AssemblyInfo.cs
+C:\Users\mcyng\Downloads\assignment\assignment\bin\Release\net40\assignment.exe
+C:\Users\mcyng\Downloads\assignment\assignment\bin\Release\net40\assignment.pdb
+C:\Users\mcyng\Downloads\assignment\assignment\obj\Release\net40\assignment.exe
+C:\Users\mcyng\Downloads\assignment\assignment\obj\Release\net40\assignment.pdb

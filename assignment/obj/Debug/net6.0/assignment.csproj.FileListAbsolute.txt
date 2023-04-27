@@ -1,0 +1,5 @@
+D:\OneDrive - University of Tasmania\206assignment\assignment\assignment\obj\Debug\net6.0\assignment.csproj.AssemblyReference.cache
+D:\OneDrive - University of Tasmania\206assignment\assignment\assignment\obj\Debug\net6.0\assignment.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - University of Tasmania\206assignment\assignment\assignment\obj\Debug\net6.0\assignment.AssemblyInfoInputs.cache
+D:\OneDrive - University of Tasmania\206assignment\assignment\assignment\obj\Debug\net6.0\assignment.AssemblyInfo.cs
+D:\OneDrive - University of Tasmania\206assignment\assignment\assignment\obj\Debug\net6.0\assignment.csproj.CoreCompileInputs.cache
