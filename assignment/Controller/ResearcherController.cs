@@ -11,5 +11,5 @@ namespace RAP.Controller
         public static List<Researcher> Researchers { get; set; }
         public static Researcher CurrentResearcher { get; set; }
     }
-
+    
 }
