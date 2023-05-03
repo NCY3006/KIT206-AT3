@@ -7,17 +7,18 @@ using RAP.DataSource;
 using RAP.Entities;
 
 
-namespace RAP
+namespace assignment
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             ResearcherDatabaseAdapter adapter = new ResearcherDatabaseAdapter();
-         //Researcher[] researchers = Controller.allResearchers(adapter);
+          //Researcher[] researchers = Controller.allResearchers(adapter);
          // foreach (Researcher re in researchers)
             {
-             Console.WriteLine();
+         //     Console.WriteLine(re);
             }
         }
     }

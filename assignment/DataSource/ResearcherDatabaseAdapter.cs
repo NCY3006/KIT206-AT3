@@ -42,7 +42,7 @@ namespace RAP.DataSource
             return conn;
         }
 
-            public Researcher[] researchers;
+        public Researcher[] researchers;
 
             public ResearcherDatabaseAdapter()
             {
