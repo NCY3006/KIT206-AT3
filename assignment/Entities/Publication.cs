@@ -9,12 +9,12 @@ namespace RAP.Entities
 {
     public class Publication
     {
-        public string DOI { get; set; }
+        public string DOI { get; set; } //pk
         public string Title { get; set; }
-        public List<string> Authors { get; set; }
-        //public Date date;
+        public string Authors { get; set; }
         public int PublicationYear { get; set; }
         public OutPutType type { get; set; }
+        public Ranking ranking { get; set; }
         public string CiteAs { get; set; }
         public DateTime Available { get; set; }
 

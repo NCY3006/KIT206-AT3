@@ -9,11 +9,12 @@ namespace RAP.Entities
 {
     public class Position
     {
+        public int id { get; set; }
         public EmploymentLevel level;
-        public Date start;
-        public Date end;
+        public DateTime start;
+        public DateTime end;
 
-        public Position(EmploymentLevel _level, Date _start, Date _end)
+        public Position(EmploymentLevel _level, DateTime _start, DateTime _end)
         {
             level = _level;
             start = _start;

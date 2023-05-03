@@ -10,12 +10,12 @@ namespace RAP.Discarded
     class Controller
     {
 
-        public Researcher[] allResearchers(ResearcherDatabaseAdapter adapter)
+        public Researcher[] allResearchers(ERDAdapter adapter)
         {
             return adapter.researchers;
         }
 
-        public Researcher[] FilterByLevel(ResearcherDatabaseAdapter adapter, EmploymentLevel level)
+        public Researcher[] FilterByLevel(ERDAdapter adapter, EmploymentLevel level)
         {
             return adapter.researchers.Where(researcher => researcher.GetCurrentJob().level == level).ToArray();
         }
@@ -44,7 +44,7 @@ namespace RAP.Discarded
             }
         }
 
-        public Researcher[] FilterByName(ResearcherDatabaseAdapter adapter, string name)
+        public Researcher[] FilterByName(ERDAdapter adapter, string name)
         {
             return adapter.researchers.Where(researcher => CheckName(researcher, name)).ToArray();
         }

@@ -9,45 +9,30 @@ namespace RAP.Entities
 {
     public class Researcher
     {
-        public int id;
-        public string GivenName;
-        public string FamilyName;
-        public string Title;
-        public string School;
-        public string Campus;
-        public string Email;
-        public string Photo;
-        public Position[] positions;
-        public Publication[] publications;
-
-        public Researcher(int _id, string _GivenName, string _FamilyName, string _School, string _Campus, string _Email, string _Photo, Position[] _positions, Publication[] _publications)
-        {
-            id = _id;
-            GivenName = _GivenName;
-            FamilyName = _FamilyName;
-            School = _School;
-            Campus = _Campus;
-            Email = _Email;
-            Photo = _Photo;
-            positions = _positions;
-            publications = _publications;
-
-            // If last position has end date, raise an error
-            if (positions.Last().end == null)
-            {
-                Console.WriteLine("Last job has end date");
-                Environment.Exit(0);
-            }
-
-            Title = positions.Last().Title();
-        }
+        public int id { get; set; } //pk
+        public int SupervisorId { get; set; }
+        public string GivenName { get; set; }
+        public string FamilyName { get; set; }
+        public string Title { get; set; }
+        public string School { get; set; }
+        public string Campus { get; set; }
+        public string Email { get; set; }
+        public string Unit { get; set; }
+        public string Photo { get; set; }
+        public string Degree { get; set; }
+        public EmploymentLevel level { get; set; }
+        public DateTime start { get; set; }
+        public DateTime End { get; set; }
+        public ResearcherType type { get; set; }
+        public Position[] positions { get; set; }
+        public Publication[] publications { get; set; }
 
         public string CurrentJobTitle()
         {
             return Title;
         }
 
-        public Date CurrentJobStart()
+        public DateTime CurrentJobStart()
         {
             return positions.Last().start;
         }
@@ -57,7 +42,7 @@ namespace RAP.Entities
             return positions.Last();
         }
 
-        public Date EarliestStart()
+        public DateTime EarliestStart()
         {
             return positions.First().start;
         }

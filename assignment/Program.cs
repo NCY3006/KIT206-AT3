@@ -14,7 +14,7 @@ namespace assignment
 
         static void Main(string[] args)
         {
-            ResearcherDatabaseAdapter adapter = new ResearcherDatabaseAdapter();
+            ERDAdapter adapter = new ERDAdapter();
           //Researcher[] researchers = Controller.allResearchers(adapter);
          // foreach (Researcher re in researchers)
             {

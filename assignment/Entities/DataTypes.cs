@@ -12,27 +12,18 @@ namespace RAP.Entities
         Student, A, B, C, D, E
     }
 
+    public enum ResearcherType
+    {
+        Student, Staff
+    }
+
     public enum OutPutType
     {
         Conference, Journal, Other
     }
 
-    public class Date
+    public enum Ranking
     {
-        public int year;
-        public int month;
-        public int day;
-
-        public Date(int _year, int _month, int _day)
-        {
-            year = _year;
-            month = _month;
-            day = _day;
-        }
-
-        public override string ToString()
-        {
-            return year + "/" + month + "/" + day;
-        }
+        Q1, Q2, Q3, Q4
     }
 }
