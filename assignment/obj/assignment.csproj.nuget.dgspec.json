@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\assignment.csproj": {}
+    "D:\\OneDrive - University of Tasmania\\Desktop\\School work\\KIT 206\\ass3\\KIT206-AT3\\assignment\\assignment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\assignment.csproj": {
+    "D:\\OneDrive - University of Tasmania\\Desktop\\School work\\KIT 206\\ass3\\KIT206-AT3\\assignment\\assignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\assignment.csproj",
+        "projectUniqueName": "D:\\OneDrive - University of Tasmania\\Desktop\\School work\\KIT 206\\ass3\\KIT206-AT3\\assignment\\assignment.csproj",
         "projectName": "assignment",
-        "projectPath": "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\assignment.csproj",
-        "packagesPath": "C:\\Users\\point\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\obj\\",
+        "projectPath": "D:\\OneDrive - University of Tasmania\\Desktop\\School work\\KIT 206\\ass3\\KIT206-AT3\\assignment\\assignment.csproj",
+        "packagesPath": "C:\\Users\\CheeseRabit\\.nuget\\packages\\",
+        "outputPath": "D:\\OneDrive - University of Tasmania\\Desktop\\School work\\KIT 206\\ass3\\KIT206-AT3\\assignment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\point\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CheeseRabit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "net40": {
+            "targetAlias": "net40",
             "projectReferences": {}
           }
         },
@@ -37,7 +38,8 @@
       },
       "frameworks": {
         "net40": {
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
