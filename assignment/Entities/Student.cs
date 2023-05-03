@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace assignment.Entities
+{
+    public class Student : Researcher
+    {
+        public string Degree;
+
+        public Student(int _id, string _GivenName, string _FamilyName, string _School, string _Campus, string _Email, string _Photo, Position[] _positions, Publication[] _publications) : base(_id, _GivenName, _FamilyName, _School, _Campus, _Email, _Photo, _positions, _publications)
+        {
+            Degree = "";
+        }
+    }
+}
