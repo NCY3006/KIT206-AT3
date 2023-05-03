@@ -229,12 +229,12 @@ namespace RAP.DataSource
             try
             {
                 var publicationDataSet = new DataSet();
-                var publicationAdapter = new MySqlDataAdapter("select year from publications where year >= " + from + "and year <= " + to, conn);
+                var publicationAdapter = new MySqlDataAdapter("select year from publication where year >= " + from + " and year <= " + to, conn);
                 publicationAdapter.Fill(publicationDataSet, "publication");
 
                 foreach (DataRow row in publicationDataSet.Tables["publication"].Rows)
                 {
-                    counts[(int)row["year"] - from] += 1;
+                    counts[int.Parse(row["year"].ToString()) - from] += 1;
                 }
                 return counts;
             }
