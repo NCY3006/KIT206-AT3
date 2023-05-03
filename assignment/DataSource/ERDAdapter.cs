@@ -55,7 +55,14 @@ namespace RAP.DataSource
                 researcherAdapter.Fill(researcherDataSet, "researcher");
                 foreach (DataRow row in researcherDataSet.Tables["researcher"].Rows)
                 {
-                    Console.WriteLine("Researcher name: {0} {1}", row["given_name"], row["family_name"].ToString(), row["level"].ToString());
+                    if (row["level"] == null)
+                    {
+                        Console.Write("null");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Researcher name: {0} {1} {2}", row["given_name"], row["family_name"].ToString(), row["level"].ToString());
+                    }
                     Researcher cur = new Researcher();
                     cur.GivenName = row["given_name"].ToString();
                     cur.FamilyName = row["family_name"].ToString();
