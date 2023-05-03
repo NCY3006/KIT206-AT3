@@ -4,11 +4,39 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+using MySql.Data.Types;
 
 namespace assignment
 {
     public class ResearcherDatabaseAdapter
     {
+        private static bool reportingErrors = false;
+
+        private const string db = "kit206";
+        private const string user = "kit206";
+        private const string pass = "kit206";
+        private const string server = "alacritas.cis.utas.edu.au";
+
+        private static MySqlConnection conn = null;
+
+        public static T ParseEnum<T>(string value)
+        {
+            return (T)Enum.Parse(typeof(T), value);
+        }
+
+        /// Creates and returns the connection to the database.
+        
+        private static MySqlConnection GetConnection()
+        {
+            if (conn == null)
+            {
+                string connectionString = String.Format("Database={0};Data Source={1};User Id={2};Password={3}", db, server, user, pass);
+                conn = new MySqlConnection(connectionString);
+            }
+            return conn;
+        }
+
         public Researcher[] researchers;
 
         public ResearcherDatabaseAdapter()
