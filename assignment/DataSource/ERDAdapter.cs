@@ -169,7 +169,7 @@ namespace RAP.DataSource
                 {
                     Publication cur = new Publication();
                     cur.Title = row["title"].ToString();
-                    cur.PublicationYear = (int)row["year"];
+                    cur.PublicationYear = int.Parse(row["year"].ToString());
 
                     publications.Add(cur);
                 }
