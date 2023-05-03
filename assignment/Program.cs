@@ -53,6 +53,11 @@ namespace assignment
                 }
             }
 
+            foreach (int i in adapter.fetchPublicationCounts(2018, 2020))
+            {
+                Console.WriteLine(i);
+            }
+
         }
     }
 }
