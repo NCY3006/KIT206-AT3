@@ -194,7 +194,7 @@ namespace RAP.DataSource
             try
             {
                 var publicationDataSet = new DataSet();
-                var publicationAdapter = new MySqlDataAdapter("select * from publications where doi = " + p.DOI, conn);
+                var publicationAdapter = new MySqlDataAdapter("select * from publication where doi = '" + p.DOI + "'", conn);
                 publicationAdapter.Fill(publicationDataSet, "publication");
 
                 foreach (DataRow row in publicationDataSet.Tables["publication"].Rows)
