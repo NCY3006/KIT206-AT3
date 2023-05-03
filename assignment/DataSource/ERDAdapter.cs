@@ -36,14 +36,13 @@ namespace RAP.DataSource
 
         /// Creates and returns the connection to the database.
 
-        private static MySqlConnection GetConnection()
+        private void GetConnection()
         {
             if (conn == null)
             {
                 string connectionString = String.Format("Database={0};Data Source={1};User Id={2};Password={3}", db, server, user, pass);
                 conn = new MySqlConnection(connectionString);
             }
-            return conn;
         }
 
         // id, name, title, level
@@ -251,6 +250,10 @@ namespace RAP.DataSource
             }
         }
 
+        public ERDAdapter()
+        {
+            GetConnection();
+        }
     }
 }
 
