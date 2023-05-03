@@ -161,7 +161,7 @@ namespace RAP.DataSource
             try
             {
                 var publicationDataSet = new DataSet();
-                var publicationAdapter = new MySqlDataAdapter("select publication.year, publication.title from publication, researcher, researcher_publication where researcher_publication.researcher_id = researcher.id and researcher_publication.doi = publication.doi" + r.id, conn);
+                var publicationAdapter = new MySqlDataAdapter("select publication.year, publication.title from publication, researcher, researcher_publication where researcher_publication.researcher_id = researcher.id and researcher_publication.doi = publication.doi and researcher.id = " + r.id, conn);
                 publicationAdapter.Fill(publicationDataSet, "publication");
 
                 foreach (DataRow row in publicationDataSet.Tables["publication"].Rows)
