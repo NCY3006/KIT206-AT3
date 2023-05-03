@@ -6,3 +6,12 @@ C:\Users\mcyng\Downloads\assignment\assignment\obj\Debug\net40\assignment.Assemb
 C:\Users\mcyng\Downloads\assignment\assignment\obj\Debug\net40\assignment.AssemblyInfo.cs
 C:\Users\mcyng\Downloads\assignment\assignment\obj\Debug\net40\assignment.exe
 C:\Users\mcyng\Downloads\assignment\assignment\obj\Debug\net40\assignment.pdb
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\obj\Debug\net40\assignment.csprojAssemblyReference.cache
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\obj\Debug\net40\assignment.AssemblyInfoInputs.cache
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\obj\Debug\net40\assignment.AssemblyInfo.cs
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\obj\Debug\net40\assignment.csproj.CoreCompileInputs.cache
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\obj\Debug\net40\assignment.exe
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\obj\Debug\net40\assignment.pdb
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\bin\Debug\net40\assignment.exe.config
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\bin\Debug\net40\assignment.exe
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\bin\Debug\net40\assignment.pdb
