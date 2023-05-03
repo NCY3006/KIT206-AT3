@@ -50,20 +50,16 @@ namespace RAP.DataSource
 
             try
             {
-                //
                 var researcherDataSet = new DataSet();
                 var researcherAdapter = new MySqlDataAdapter("select given_name, family_name, title, level from researcher", conn);
                 researcherAdapter.Fill(researcherDataSet, "researcher");
                 foreach (DataRow row in researcherDataSet.Tables["researcher"].Rows)
                 {
-                    Console.WriteLine("Researcher name: {0} {1}", row["given_name"], row["family_name"].ToString());
+                    Console.WriteLine("Researcher name: {0} {1}", row["given_name"], row["family_name"].ToString(), row["level"].ToString());
                     Researcher cur = new Researcher();
                     cur.GivenName = row["given_name"].ToString();
                     cur.FamilyName = row["family_name"].ToString();
-                    if (row["level"] != null)
-                    {
-                        cur.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
-                    }
+                    //cur.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
                     cur.Title = row["title"].ToString();
                     researchers.Add(cur);
                 }
