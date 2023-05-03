@@ -38,7 +38,6 @@ namespace RAP.DataSource
             {
                 string connectionString = String.Format("Database={0};Data Source={1};User Id={2};Password={3}", db, server, user, pass);
                 conn = new MySqlConnection(connectionString);
-                Console.WriteLine("1");
             }
         }
 
@@ -49,16 +48,15 @@ namespace RAP.DataSource
             
             conn.Open();
 
-            Console.WriteLine("Opened");
             try
             {
-                Console.WriteLine("Tried");
+                //
                 var researcherDataSet = new DataSet();
                 var researcherAdapter = new MySqlDataAdapter("select given_name, family_name, title, level from researcher", conn);
                 researcherAdapter.Fill(researcherDataSet, "researcher");
-
                 foreach (DataRow row in researcherDataSet.Tables["researcher"].Rows)
                 {
+                    Console.WriteLine("123");
                     Researcher cur = new Researcher();
                     cur.GivenName = row["given_name"].ToString();
                     cur.FamilyName = row["family_name"].ToString();
