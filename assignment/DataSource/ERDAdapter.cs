@@ -51,11 +51,12 @@ namespace RAP.DataSource
             try
             {
                 var researcherDataSet = new DataSet();
-                var researcherAdapter = new MySqlDataAdapter("select given_name, family_name, title, level from researcher", conn);
+                var researcherAdapter = new MySqlDataAdapter("select id, given_name, family_name, title, level from researcher", conn);
                 researcherAdapter.Fill(researcherDataSet, "researcher");
                 foreach (DataRow row in researcherDataSet.Tables["researcher"].Rows)
                 {
                     Researcher cur = new Researcher();
+                    cur.id = (int)row["id"];
                     cur.GivenName = row["given_name"].ToString();
                     cur.FamilyName = row["family_name"].ToString();
                     // null in database
