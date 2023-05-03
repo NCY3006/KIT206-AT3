@@ -6,3 +6,11 @@ D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\n
 D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.AssemblyInfoInputs.cache
 D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.AssemblyInfo.cs
 D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.csproj.CoreCompileInputs.cache
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\bin\Debug\net481\RAP.exe.config
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\bin\Debug\net481\RAP.exe
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\bin\Debug\net481\RAP.pdb
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\bin\Debug\net481\MySql.Data.dll
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\bin\Debug\net481\MySql.Data.xml
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.csproj.CopyComplete
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.exe
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.pdb

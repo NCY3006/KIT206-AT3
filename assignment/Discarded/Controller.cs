@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using RAP.Entities;
 using RAP.DataSource;
-
+/*
 namespace RAP.Discarded
 {
     class Controller
@@ -55,3 +55,4 @@ namespace RAP.Discarded
         }
     }
 }
+*/

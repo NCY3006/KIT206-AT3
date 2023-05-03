@@ -16,6 +16,10 @@ namespace assignment
         {
             ERDAdapter adapter = new ERDAdapter();
             Researcher[] researchers = adapter.fetchBasicResearcherDetails();
+            foreach (Researcher r in researchers)
+            {
+                Console.WriteLine(r);
+            }
         }
     }
 }

@@ -18,16 +18,12 @@ namespace RAP.DataSource
 
     public class ERDAdapter
     {
-        private static bool reportingErrors = false;
-
         private const string db = "kit206";
         private const string user = "kit206";
         private const string pass = "kit206";
         private const string server = "alacritas.cis.utas.edu.au";
 
         private static MySqlConnection conn = null;
-        MySqlDataReader rdr = null;
-        public Researcher[] researchers;
 
         public static T ParseEnum<T>(string value)
         {
