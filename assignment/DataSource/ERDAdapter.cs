@@ -60,7 +60,10 @@ namespace RAP.DataSource
                     Researcher cur = new Researcher();
                     cur.GivenName = row["given_name"].ToString();
                     cur.FamilyName = row["family_name"].ToString();
-                    cur.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
+                    if (row["level"] != null)
+                    {
+                        cur.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
+                    }
                     cur.Title = row["title"].ToString();
                     researchers.Add(cur);
                 }
