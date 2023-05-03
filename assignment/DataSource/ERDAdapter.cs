@@ -162,13 +162,14 @@ namespace RAP.DataSource
             try
             {
                 var publicationDataSet = new DataSet();
-                var publicationAdapter = new MySqlDataAdapter("select publication.year, publication.title from publication, researcher, researcher_publication where researcher_publication.researcher_id = researcher.id and researcher_publication.doi = publication.doi and researcher.id = " + r.id, conn);
+                var publicationAdapter = new MySqlDataAdapter("select publication.doi, publication.year, publication.title from publication, researcher, researcher_publication where researcher_publication.researcher_id = researcher.id and researcher_publication.doi = publication.doi and researcher.id = " + r.id, conn);
                 publicationAdapter.Fill(publicationDataSet, "publication");
 
                 foreach (DataRow row in publicationDataSet.Tables["publication"].Rows)
                 {
                     Publication cur = new Publication();
                     cur.Title = row["title"].ToString();
+                    cur.DOI = row["doi"].ToString();
                     cur.PublicationYear = int.Parse(row["year"].ToString());
 
                     publications.Add(cur);
@@ -201,10 +202,10 @@ namespace RAP.DataSource
                     p.DOI = row["doi"].ToString();
                     p.Title = row["title"].ToString();
                     p.Authors = row["authors"].ToString();
-                    p.ranking = (Ranking)row["ranking"];
-                    p.type = (OutPutType)row["type"];
+                    p.ranking = (Ranking)Enum.Parse(typeof(Ranking), row["ranking"].ToString());
+                    p.type = (OutPutType)Enum.Parse(typeof(OutPutType), row["type"].ToString());
                     p.CiteAs = row["cite_as"].ToString();
-                    p.Available = (DateTime)row["available"];
+                    // p.Available = (DateTime)row["available"];
                 }
                 return p;
             }
