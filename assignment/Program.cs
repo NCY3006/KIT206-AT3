@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using assignment.DataSource;
+using RAP.DataSource;
+using RAP.Entities;
+
 
 namespace assignment
 {
@@ -12,10 +14,10 @@ namespace assignment
         static void Main(string[] args)
         {
             ResearcherDatabaseAdapter adapter = new ResearcherDatabaseAdapter();
-            Researcher[] researchers = Controller.allResearchers(adapter);
-            foreach (Researcher re in researchers)
+          //Researcher[] researchers = Controller.allResearchers(adapter);
+         // foreach (Researcher re in researchers)
             {
-                Console.WriteLine(re);
+         //     Console.WriteLine(re);
             }
         }
     }

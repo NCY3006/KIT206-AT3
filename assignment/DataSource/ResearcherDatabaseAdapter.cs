@@ -6,10 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using MySql.Data.Types;
+using RAP.Entities;
+using RAP.Controller;
+using RAP;
 
-namespace assignment.DataSource
+namespace RAP.DataSource
 {
-    private static readonly string filePath = Path.Combine(Directory.GetCurrentDirectory(), "\\PublicationRecord");
+  //private static readonly string filePath = Path.Combine(Directory.GetCurrentDirectory(), "\\PublicationRecord");
 
     public class ResearcherDatabaseAdapter
     {
@@ -39,14 +42,14 @@ namespace assignment.DataSource
             return conn;
         }
 
-        public Researcher[] researchers;
+            public Researcher[] researchers;
 
-        public ResearcherDatabaseAdapter()
-        {
-            researchers = new Researcher[] {
-                new Student(123, "Oscar", "Huang", "UTAS", "Launceston", "123@123.com", "dawd", new Position[] {new Position(EmploymentLevel.Student, new Date(2023, 4, 25), new Date(2023, 4, 26)) }, new Publication[] { }),
-                new Staff(123, "O", "H", "UTAS", "Launceston", "123@123.com", "dawd", new Position[] {new Position(EmploymentLevel.B, new Date(2023, 4, 25), new Date(2023, 4, 26)) }, new Publication[] { })
-            };
+            public ResearcherDatabaseAdapter()
+            {
+                researchers = new Researcher[] {
+                    new Student(123, "Oscar", "Huang", "UTAS", "Launceston", "123@123.com", "dawd", new Position[] {new Position(EmploymentLevel.Student, new Date(2023, 4, 25), new Date(2023, 4, 26)) }, new Publication[] { }),
+                    new Staff(123, "O", "H", "UTAS", "Launceston", "123@123.com", "dawd", new Position[] {new Position(EmploymentLevel.B, new Date(2023, 4, 25), new Date(2023, 4, 26)) }, new Publication[] { })
+                };
         }
     }
 }

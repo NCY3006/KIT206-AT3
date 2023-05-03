@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RAP;
 
-namespace assignment.Entities
+namespace RAP.Entities
 {
     public class Position
     {

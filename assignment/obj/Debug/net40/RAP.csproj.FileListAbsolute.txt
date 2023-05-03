@@ -1,0 +1,4 @@
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\obj\Debug\net40\RAP.AssemblyInfoInputs.cache
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\obj\Debug\net40\RAP.AssemblyInfo.cs
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\obj\Debug\net40\RAP.csproj.CoreCompileInputs.cache
+C:\Users\point\OneDrive\Documents\GitHub\KIT206-AT3\assignment\obj\Debug\net40\RAP.csprojAssemblyReference.cache

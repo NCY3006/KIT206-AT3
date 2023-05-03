@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using RAP.Entities;
 
-namespace assignment.Controller
+namespace RAP.PublicationController
 {
     class PublicationController
     {

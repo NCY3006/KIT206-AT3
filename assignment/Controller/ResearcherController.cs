@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using assignment.Entities;
+using RAP.Entities;
 
-namespace assignment.Discarded.Controller
+namespace RAP.Controller
 {
     class ResearcherController
     {
