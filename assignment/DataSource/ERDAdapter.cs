@@ -11,6 +11,7 @@ using RAP.Controller;
 using RAP;
 using System.Data;
 using System.Runtime.ConstrainedExecution;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace RAP.DataSource
 {
@@ -59,7 +60,7 @@ namespace RAP.DataSource
                     Researcher cur = new Researcher();
                     cur.GivenName = row["given_name"].ToString();
                     cur.FamilyName = row["family_name"].ToString();
-                    cur.level = (EmploymentLevel)row["level"];
+                    cur.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
                     cur.Title = row["title"].ToString();
                     researchers.Add(cur);
                 }
@@ -252,5 +253,3 @@ namespace RAP.DataSource
         }
     }
 }
-
-
