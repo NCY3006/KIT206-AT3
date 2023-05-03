@@ -1,12 +1,12 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.0": {},
-    ".NETFramework,Version=v4.0/win7-x86": {}
+    ".NETFramework,Version=v4.8.1": {},
+    ".NETFramework,Version=v4.8.1/win7-x86": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.0": []
+    ".NETFramework,Version=v4.8.1": []
   },
   "packageFolders": {
     "C:\\Users\\CheeseRabit\\.nuget\\packages\\": {}
@@ -14,26 +14,26 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive - University of Tasmania\\206assignment\\WindowsFormsApp1\\KIT206-AT3\\assignment\\RAP.csproj",
+      "projectUniqueName": "D:\\OneDrive - University of Tasmania\\Documents\\KIT206-AT3\\assignment\\RAP.csproj",
       "projectName": "RAP",
-      "projectPath": "D:\\OneDrive - University of Tasmania\\206assignment\\WindowsFormsApp1\\KIT206-AT3\\assignment\\RAP.csproj",
+      "projectPath": "D:\\OneDrive - University of Tasmania\\Documents\\KIT206-AT3\\assignment\\RAP.csproj",
       "packagesPath": "C:\\Users\\CheeseRabit\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive - University of Tasmania\\206assignment\\WindowsFormsApp1\\KIT206-AT3\\assignment\\obj\\",
+      "outputPath": "D:\\OneDrive - University of Tasmania\\Documents\\KIT206-AT3\\assignment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CheeseRabit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net40"
+        "net481"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net40": {
-          "targetAlias": "net40",
+        "net481": {
+          "targetAlias": "net481",
           "projectReferences": {}
         }
       },
@@ -44,8 +44,8 @@
       }
     },
     "frameworks": {
-      "net40": {
-        "targetAlias": "net40",
+      "net481": {
+        "targetAlias": "net481",
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     },

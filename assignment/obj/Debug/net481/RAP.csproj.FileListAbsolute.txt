@@ -1,0 +1,8 @@
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.csproj.AssemblyReference.cache
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.csproj.SuggestedBindingRedirects.cache
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.Properties.Resources.resources
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.csproj.GenerateResource.cache
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.AssemblyInfoInputs.cache
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.AssemblyInfo.cs
+D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\obj\Debug\net481\RAP.csproj.CoreCompileInputs.cache

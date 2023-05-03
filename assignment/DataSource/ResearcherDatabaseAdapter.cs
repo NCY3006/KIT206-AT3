@@ -43,7 +43,7 @@ namespace RAP.DataSource
         }
 
         public Researcher[] researchers;
-
+        
             public ResearcherDatabaseAdapter()
             {
                 researchers = new Researcher[] {
