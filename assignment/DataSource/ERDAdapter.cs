@@ -56,7 +56,7 @@ namespace RAP.DataSource
                 researcherAdapter.Fill(researcherDataSet, "researcher");
                 foreach (DataRow row in researcherDataSet.Tables["researcher"].Rows)
                 {
-                    Console.WriteLine("123");
+                    Console.WriteLine(row["given_name"].ToString());
                     Researcher cur = new Researcher();
                     cur.GivenName = row["given_name"].ToString();
                     cur.FamilyName = row["family_name"].ToString();
