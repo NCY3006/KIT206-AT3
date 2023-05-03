@@ -25,5 +25,10 @@ namespace RAP.Entities
             var age = today.Year - PublicationYear;
             return age;
         }
+
+        public override string ToString()
+        {
+            return Title;
+        }
     }
 }

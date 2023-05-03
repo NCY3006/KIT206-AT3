@@ -55,18 +55,11 @@ namespace RAP.DataSource
                 researcherAdapter.Fill(researcherDataSet, "researcher");
                 foreach (DataRow row in researcherDataSet.Tables["researcher"].Rows)
                 {
-                    if (row["level"] == null)
-                    {
-                        Console.Write("null");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Researcher name: {0} {1} {2}", row["given_name"], row["family_name"].ToString(), row["level"].ToString());
-                    }
                     Researcher cur = new Researcher();
                     cur.GivenName = row["given_name"].ToString();
                     cur.FamilyName = row["family_name"].ToString();
-                    //cur.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
+                    // null in database
+                    // cur.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
                     cur.Title = row["title"].ToString();
                     researchers.Add(cur);
                 }
@@ -100,7 +93,7 @@ namespace RAP.DataSource
                     researcher.GivenName = row["given_name"].ToString();
                     researcher.FamilyName = row["family_name"].ToString();
                     researcher.Title = row["title"].ToString();
-                    researcher.Unit = row["unit"].ToString();
+                    /*researcher.Unit = row["unit"].ToString();
                     researcher.Campus = row["campus"].ToString();
                     researcher.Email = row["email"].ToString();
                     researcher.Photo = row["photo"].ToString();
@@ -109,7 +102,7 @@ namespace RAP.DataSource
                     researcher.type = (ResearcherType)row["type"];
                     researcher.level = (EmploymentLevel)row["level"];
                     researcher.start = (DateTime)row["start"];
-                    researcher.start = (DateTime)row["end"];
+                    researcher.start = (DateTime)row["end"];*/
                 }
                 return researcher;
             }
@@ -123,7 +116,7 @@ namespace RAP.DataSource
             }
         }
 
-        public Researcher completeResearcherDertails(Researcher r)
+        public Researcher completeResearcherDetails(Researcher r)
         {
             conn.Open();
 
@@ -138,7 +131,7 @@ namespace RAP.DataSource
                     r.GivenName = row["given_name"].ToString();
                     r.FamilyName = row["family_name"].ToString();
                     r.Title = row["title"].ToString();
-                    r.Unit = row["unit"].ToString();
+                    /*r.Unit = row["unit"].ToString();
                     r.Campus = row["campus"].ToString();
                     r.Email = row["email"].ToString();
                     r.Photo = row["photo"].ToString();
@@ -147,7 +140,7 @@ namespace RAP.DataSource
                     r.type = (ResearcherType)row["type"];
                     r.level = (EmploymentLevel)row["level"];
                     r.start = (DateTime)row["start"];
-                    r.start = (DateTime)row["end"];
+                    r.start = (DateTime)row["end"];*/
                 }
                 return r;
             }
