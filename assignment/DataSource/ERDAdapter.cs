@@ -23,7 +23,7 @@ namespace RAP.DataSource
         private const string pass = "kit206";
         private const string server = "alacritas.cis.utas.edu.au";
 
-        private static MySqlConnection conn = null;
+        private MySqlConnection conn = null;
 
         public static T ParseEnum<T>(string value)
         {
@@ -38,6 +38,7 @@ namespace RAP.DataSource
             {
                 string connectionString = String.Format("Database={0};Data Source={1};User Id={2};Password={3}", db, server, user, pass);
                 conn = new MySqlConnection(connectionString);
+                Console.WriteLine("1");
             }
         }
 
@@ -48,8 +49,10 @@ namespace RAP.DataSource
             
             conn.Open();
 
+            Console.WriteLine("Opened");
             try
             {
+                Console.WriteLine("Tried");
                 var researcherDataSet = new DataSet();
                 var researcherAdapter = new MySqlDataAdapter("select given_name, family_name, title, level from researcher", conn);
                 researcherAdapter.Fill(researcherDataSet, "researcher");
@@ -158,7 +161,6 @@ namespace RAP.DataSource
         {
             List<Publication> publications = new List<Publication>();
             conn.Open();
-
             try
             {
                 var publicationDataSet = new DataSet();
