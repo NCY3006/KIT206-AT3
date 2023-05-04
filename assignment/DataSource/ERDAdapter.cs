@@ -43,7 +43,7 @@ namespace RAP.DataSource
         }
 
         // id, name, title, level
-        public Researcher[] fetchBasicResearcherDetails()
+        public List<Researcher> fetchBasicResearcherDetails()
         {
             List<Researcher> researchers = new List<Researcher>();
             conn.Open();
@@ -59,8 +59,14 @@ namespace RAP.DataSource
                     cur.id = (int)row["id"];
                     cur.GivenName = row["given_name"].ToString();
                     cur.FamilyName = row["family_name"].ToString();
-                    // null in database
-                    // cur.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
+                    if (row["level"].ToString() != "")
+                    {
+                        cur.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
+                    }
+                    else
+                    {
+                        cur.level = null;
+                    }
                     cur.Title = row["title"].ToString();
                     researchers.Add(cur);
                 }
@@ -74,7 +80,7 @@ namespace RAP.DataSource
                 }
             }
 
-            return researchers.ToArray();
+            return researchers;
         }
 
         public Researcher fetchFullResearcherDetails(int id)
@@ -94,16 +100,53 @@ namespace RAP.DataSource
                     researcher.GivenName = row["given_name"].ToString();
                     researcher.FamilyName = row["family_name"].ToString();
                     researcher.Title = row["title"].ToString();
-                    /*researcher.Unit = row["unit"].ToString();
+                    researcher.Unit = row["unit"].ToString();
                     researcher.Campus = row["campus"].ToString();
-                    researcher.Email = row["email"].ToString();
-                    researcher.Photo = row["photo"].ToString();
+                    if (row["email"].ToString() != null)
+                    {
+                        researcher.Email = row["email"].ToString();
+                    }
+                    else
+                    {
+                        researcher.Email = null;
+                    }
+                    if (row["photo"].ToString() == "")
+                    {
+                        researcher.Photo = row["photo"].ToString();
+                    }
                     researcher.Degree = row["degree"].ToString();
-                    researcher.SupervisorId = (int)row["supervisor_id"];
-                    researcher.type = (ResearcherType)row["type"];
-                    researcher.level = (EmploymentLevel)row["level"];
-                    researcher.start = (DateTime)row["start"];
-                    researcher.start = (DateTime)row["end"];*/
+                    if (row["supervisor_id"].ToString() != "") {
+                        researcher.SupervisorId = (int)row["supervisor_id"];
+                    }
+                    else
+                    {
+                        researcher.SupervisorId = null;
+                    }
+                    researcher.type = (ResearcherType)Enum.Parse(typeof(ResearcherType), row["type"].ToString());
+                    if (row["level"].ToString() != "")
+                    {
+                        researcher.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
+                    }
+                    else
+                    {
+                        researcher.level = null;
+                    }
+                    if (row["utas_start"].ToString() != "")
+                    {
+                        researcher.utasStart = Convert.ToDateTime(row["utas_start"]);
+                    }
+                    else
+                    {
+                        researcher.utasStart = null;
+                    }
+                    if (row["current_start"].ToString() != "")
+                    {
+                        researcher.currentStart = Convert.ToDateTime(row["current_start"]);
+                    }
+                    else
+                    {
+                        researcher.currentStart = null;
+                    }
                 }
                 return researcher;
             }
@@ -117,33 +160,71 @@ namespace RAP.DataSource
             }
         }
 
-        public Researcher completeResearcherDetails(Researcher r)
+        public Researcher completeResearcherDetails(Researcher researcher)
         {
             conn.Open();
 
             try
             {
                 var researcherDataSet = new DataSet();
-                var researcherAdapter = new MySqlDataAdapter("select * from researcher where id = " + r.id, conn);
+                var researcherAdapter = new MySqlDataAdapter("select * from researcher where id = " + researcher.id, conn);
                 researcherAdapter.Fill(researcherDataSet, "researcher");
 
                 foreach (DataRow row in researcherDataSet.Tables["researcher"].Rows)
                 {
-                    r.GivenName = row["given_name"].ToString();
-                    r.FamilyName = row["family_name"].ToString();
-                    r.Title = row["title"].ToString();
-                    /*r.Unit = row["unit"].ToString();
-                    r.Campus = row["campus"].ToString();
-                    r.Email = row["email"].ToString();
-                    r.Photo = row["photo"].ToString();
-                    r.Degree = row["degree"].ToString();
-                    r.SupervisorId = (int)row["supervisor_id"];
-                    r.type = (ResearcherType)row["type"];
-                    r.level = (EmploymentLevel)row["level"];
-                    r.start = (DateTime)row["start"];
-                    r.start = (DateTime)row["end"];*/
+                    researcher.GivenName = row["given_name"].ToString();
+                    researcher.FamilyName = row["family_name"].ToString();
+                    researcher.Title = row["title"].ToString();
+                    researcher.Unit = row["unit"].ToString();
+                    researcher.Campus = row["campus"].ToString();
+                    if (row["email"].ToString() != null)
+                    {
+                        researcher.Email = row["email"].ToString();
+                    }
+                    else
+                    {
+                        researcher.Email = null;
+                    }
+                    if (row["photo"].ToString() == "")
+                    {
+                        researcher.Photo = row["photo"].ToString();
+                    }
+                    researcher.Degree = row["degree"].ToString();
+                    if (row["supervisor_id"].ToString() != "")
+                    {
+                        researcher.SupervisorId = (int)row["supervisor_id"];
+                    }
+                    else
+                    {
+                        researcher.SupervisorId = null;
+                    }
+                    researcher.type = (ResearcherType)Enum.Parse(typeof(ResearcherType), row["type"].ToString());
+                    if (row["level"].ToString() != "")
+                    {
+                        researcher.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
+                    }
+                    else
+                    {
+                        researcher.level = null;
+                    }
+                    if (row["utas_start"].ToString() != "")
+                    {
+                        researcher.utasStart = Convert.ToDateTime(row["utas_start"]);
+                    }
+                    else
+                    {
+                        researcher.utasStart = null;
+                    }
+                    if (row["current_start"].ToString() != "")
+                    {
+                        researcher.currentStart = Convert.ToDateTime(row["current_start"]);
+                    }
+                    else
+                    {
+                        researcher.currentStart = null;
+                    }
                 }
-                return r;
+                return researcher;
             }
             finally
             {
@@ -155,7 +236,7 @@ namespace RAP.DataSource
             }
         }
 
-        public Publication[] fetchBasicPublicationDetails(Researcher r)
+        public List<Publication> fetchBasicPublicationDetails(Researcher r)
         {
             List<Publication> publications = new List<Publication>();
             conn.Open();
@@ -174,7 +255,7 @@ namespace RAP.DataSource
 
                     publications.Add(cur);
                 }
-                return publications.ToArray();
+                return publications;
             }
             finally
             {
@@ -184,7 +265,6 @@ namespace RAP.DataSource
                     conn.Close();
                 }
             }
-
         }
 
         public Publication completePublicationDetails(Publication p)
@@ -205,7 +285,7 @@ namespace RAP.DataSource
                     p.ranking = (Ranking)Enum.Parse(typeof(Ranking), row["ranking"].ToString());
                     p.type = (OutPutType)Enum.Parse(typeof(OutPutType), row["type"].ToString());
                     p.CiteAs = row["cite_as"].ToString();
-                    // p.Available = (DateTime)row["available"];
+                    p.Available = Convert.ToDateTime(row["available"]);
                 }
                 return p;
             }
@@ -237,6 +317,43 @@ namespace RAP.DataSource
                     counts[int.Parse(row["year"].ToString()) - from] += 1;
                 }
                 return counts;
+            }
+            finally
+            {
+                // Close the connection
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+        }
+
+        public List<Position> fetchPositionFromId(int id)
+        {
+            List<Position> positions = new List<Position>();
+            conn.Open();
+            try
+            {
+                var publicationDataSet = new DataSet();
+                var publicationAdapter = new MySqlDataAdapter("select * from position where id = " + id, conn);
+                publicationAdapter.Fill(publicationDataSet, "position");
+
+                foreach (DataRow row in publicationDataSet.Tables["position"].Rows)
+                {
+                    Position cur = new Position();
+                    cur.level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), row["level"].ToString());
+                    cur.start = Convert.ToDateTime(row["start"]);
+                    if (row["end"].ToString() != "") {
+                        cur.end = Convert.ToDateTime(row["end"]);
+                    }
+                    else
+                    {
+                        cur.end = null;
+                    }
+
+                    positions.Add(cur);
+                }
+                return positions;
             }
             finally
             {

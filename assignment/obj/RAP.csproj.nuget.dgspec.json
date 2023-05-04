@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive - University of Tasmania\\Documents\\KIT206-AT3\\assignment\\RAP.csproj": {}
+    "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\RAP.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive - University of Tasmania\\Documents\\KIT206-AT3\\assignment\\RAP.csproj": {
+    "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\RAP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - University of Tasmania\\Documents\\KIT206-AT3\\assignment\\RAP.csproj",
+        "projectUniqueName": "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\RAP.csproj",
         "projectName": "RAP",
-        "projectPath": "D:\\OneDrive - University of Tasmania\\Documents\\KIT206-AT3\\assignment\\RAP.csproj",
-        "packagesPath": "C:\\Users\\CheeseRabit\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - University of Tasmania\\Documents\\KIT206-AT3\\assignment\\obj\\",
+        "projectPath": "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\RAP.csproj",
+        "packagesPath": "C:\\Users\\point\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\point\\OneDrive\\Documents\\GitHub\\KIT206-AT3\\assignment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CheeseRabit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\point\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "net481": {
-            "targetAlias": "net481",
             "projectReferences": {}
           }
         },
@@ -38,8 +37,7 @@
       },
       "frameworks": {
         "net481": {
-          "targetAlias": "net481",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

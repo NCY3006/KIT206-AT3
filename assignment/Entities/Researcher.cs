@@ -10,19 +10,19 @@ namespace RAP.Entities
     public class Researcher
     {
         public int id { get; set; } //pk
-        public int SupervisorId { get; set; }
+        public int? SupervisorId { get; set; }
         public string GivenName { get; set; }
         public string FamilyName { get; set; }
         public string Title { get; set; }
         public string School { get; set; }
         public string Campus { get; set; }
-        public string Email { get; set; }
+        public string? Email { get; set; }
         public string Unit { get; set; }
-        public string Photo { get; set; }
-        public string Degree { get; set; }
-        public EmploymentLevel level { get; set; }
-        public DateTime start { get; set; }
-        public DateTime End { get; set; }
+        public string? Photo { get; set; }
+        public string? Degree { get; set; }
+        public EmploymentLevel? level { get; set; }
+        public DateTime? utasStart { get; set; }
+        public DateTime? currentStart { get; set; }
         public ResearcherType type { get; set; }
         public Position[] positions { get; set; }
         public Publication[] publications { get; set; }
