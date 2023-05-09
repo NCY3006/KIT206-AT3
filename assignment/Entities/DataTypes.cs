@@ -9,7 +9,7 @@ namespace RAP.Entities
 {
     public enum EmploymentLevel
     {
-        A, B, C, D, E 
+        Student, A, B, C, D, E 
     }
 
     public enum ResearcherType

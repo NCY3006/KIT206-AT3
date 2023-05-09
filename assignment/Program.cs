@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using RAP.DataSource;
 using RAP.Controller;
 using RAP.Entities;
-
+using RAP.PublicationController;
 
 namespace assignment
 {
@@ -14,8 +14,10 @@ namespace assignment
     {
         static void Main(string[] args)
         {
-            ResearcherController researcherController = new ResearcherController();
-            researcherController.initialize();
+            ERDAdapter adapter = new ERDAdapter();
+            ResearcherController researcherController = new ResearcherController(adapter);
+            PublicationController publicationController = new PublicationController(adapter);
+
             researcherController.filterResearchersByName("John");
             foreach (Researcher r in researcherController.Researchers)
             {

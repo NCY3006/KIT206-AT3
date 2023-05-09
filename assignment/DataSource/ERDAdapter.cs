@@ -65,7 +65,7 @@ namespace RAP.DataSource
                     }
                     else
                     {
-                        cur.level = null;
+                        cur.level = EmploymentLevel.Student;
                     }
                     cur.Title = row["title"].ToString();
                     researchers.Add(cur);
@@ -129,7 +129,7 @@ namespace RAP.DataSource
                     }
                     else
                     {
-                        researcher.level = null;
+                        researcher.level = EmploymentLevel.Student;
                     }
                     if (row["utas_start"].ToString() != "")
                     {
@@ -205,7 +205,7 @@ namespace RAP.DataSource
                     }
                     else
                     {
-                        researcher.level = null;
+                        researcher.level = EmploymentLevel.Student;
                     }
                     if (row["utas_start"].ToString() != "")
                     {
