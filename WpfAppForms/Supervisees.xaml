@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfAppForms.Supervisees"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppForms"
+        mc:Ignorable="d"
+        Title="Supervisees" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- First row with bold title -->
+        <Label Grid.Row="0" Content="Supervisees" FontWeight="Bold" FontSize="16"/>
+
+        <!-- Second row with listbox -->
+        <ListBox Grid.Row="1" x:Name="listsupervisees" HorizontalContentAlignment="Stretch">
+            <!-- Replace the following items with your actual data -->
+            <ListBox.Items>
+                <ListBoxItem>Supervisee 1</ListBoxItem>
+                <ListBoxItem>Supervisee 2</ListBoxItem>
+                <!-- Add more items as needed -->
+            </ListBox.Items>
+        </ListBox>
+    </Grid>
+</Window>
