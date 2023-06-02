@@ -1,0 +1,126 @@
+﻿<Window x:Class="WpfAppForms.PublicationDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppForms"
+        mc:Ignorable="d"
+        Title="PublicationDetails" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- First row with bold title -->
+        <Label Grid.Row="0" Content="Publication Details" FontWeight="Bold" FontSize="16"/>
+
+        <!-- Second row with labels -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="DOI" FontWeight="Bold"/>
+            <Label Grid.Column="1" x:Name="lbldoi" Content="doi"/>
+        </Grid>
+
+        <!-- Third row with labels -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="Title" FontWeight="Bold"/>
+            <Label Grid.Column="1" x:Name="lbltitle" Content="title"/>
+        </Grid>
+
+        <!-- Fourth row with labels -->
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="Authors" FontWeight="Bold"/>
+            <Label Grid.Column="1" x:Name="lblauthors" Content="authors"/>
+        </Grid>
+
+        <!-- Fifth row with labels -->
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="Publication Year" FontWeight="Bold"/>
+            <Label Grid.Column="1" x:Name="lblyear" Content="publication year"/>
+        </Grid>
+
+        <!-- Sixth row with labels -->
+        <Grid Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="Ranking" FontWeight="Bold"/>
+            <Label Grid.Column="1" x:Name="lblranking" Content="ranking"/>
+        </Grid>
+
+        <!-- Seventh row with labels -->
+        <Grid Grid.Row="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="Type" FontWeight="Bold"/>
+            <Label Grid.Column="1" x:Name="lblconference" Content="conference"/>
+        </Grid>
+
+        <!-- Eighth row with labels -->
+        <Grid Grid.Row="7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Content="Cite" FontWeight="Bold"/>
+            <Label Grid.Column="1" x:Name="lblcite" Content="cite"/>
+        </Grid>
+
+        <!-- Ninth row with labels -->
+        <Grid Grid.Row="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="Availability date" FontWeight="Bold"/>
+            <Label Grid.Column="1" x:Name="lbldate" Content="date" />
+        </Grid>
+
+        <!-- Tenth row with labels -->
+        <Grid Grid.Row="9">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="Age" FontWeight="Bold"/>
+            <Label Grid.Column="1" x:Name="lblage" Content="age"/>
+            <Label Grid.Column="2" Content="days"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,3 +1,7 @@
 is_global = true
 build_property.RootNamespace = RAP
+<<<<<<< Updated upstream
 build_property.ProjectDir = D:\OneDrive - University of Tasmania\Documents\KIT206-AT3\assignment\
+=======
+build_property.ProjectDir = C:\Users\Mtundi\Downloads\KIT206-AT3-main_3\KIT206-AT3-main\assignment\
+>>>>>>> Stashed changes

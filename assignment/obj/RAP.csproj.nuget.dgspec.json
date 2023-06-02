@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "D:\\OneDrive - University of Tasmania\\Documents\\KIT206-AT3\\assignment\\RAP.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CheeseRabit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\Mtundi\\Downloads\\KIT206-AT3-main_3\\KIT206-AT3-main\\assignment\\RAP.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Mtundi\\Downloads\\KIT206-AT3-main_3\\KIT206-AT3-main\\assignment\\RAP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mtundi\\Downloads\\KIT206-AT3-main_3\\KIT206-AT3-main\\assignment\\RAP.csproj",
+        "projectName": "RAP",
+        "projectPath": "C:\\Users\\Mtundi\\Downloads\\KIT206-AT3-main_3\\KIT206-AT3-main\\assignment\\RAP.csproj",
+        "packagesPath": "C:\\Users\\Mtundi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mtundi\\Downloads\\KIT206-AT3-main_3\\KIT206-AT3-main\\assignment\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mtundi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +56,17 @@
       "frameworks": {
         "net481": {
           "targetAlias": "net481",
+<<<<<<< Updated upstream
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+=======
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.33, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
         }
       },
       "runtimes": {

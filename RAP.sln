@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< Updated upstream
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RAP", "assignment\RAP.csproj", "{D2408C4F-5D6A-4DAC-A5CB-BF9B6BC44275}"
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RAP", "RAPLibrary\RAP.csproj", "{72CA6959-C33F-40D2-A152-9C2AE6AA6D55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppForms", "WpfAppForms\WpfAppForms.csproj", "{8A87DF58-01C8-4CEA-82DE-9A7DD6117757}"
+>>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
